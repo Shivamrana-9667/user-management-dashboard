@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+  background-color: #2b2e31;
+  color: rgb(184, 31, 31);
+  text-align: center;  /* Center the text */
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* User Management Dashboard Title */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;  /* Larger font size */
+  font-weight: 800;   /* Bold text */
+  color: #007BFF;
+  background-color: #f4f7fa; /* Light background color */
+  padding: 20px;
+  margin: 30px 0;  /* Add some spacing */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+  text-transform: uppercase;  /* Make text uppercase */
+  letter-spacing: 1px;  /* Add some spacing between letters */
+}
+
+h2 span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* User List Styles */
+.user-list-container {
+  margin-top: 20px;
+}
+
+.user-list-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #ff4500;
+}
+
+/* Edit & Delete Buttons in One Line */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;  /* Adjust width to fit buttons */
+}
+
+.buttons-container button {
+  width: 48%;  /* Make buttons equal width */
+  margin: 0;
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .user-list-container {
+    margin-top: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form input {
+    margin-bottom: 10px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
